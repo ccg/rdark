@@ -4,9 +4,6 @@
 " Last Change: 2007 Jun 23
 " Version: 0.6
 "
-" Features:
-"   - let rdark_current_line = 1 if you want to highlight the current line
-"
 " Changelog:
 "   0.5 - fixed the Pmenu colors
 "   0.6 - added SignColumn colors
@@ -21,10 +18,8 @@ endif
 let colors_name = "rdark"
 
 " Current Line
-if exists('rdark_current_line') && rdark_current_line == 1
-	set cursorline
-	hi CursorLine guibg=#191f21
-endif
+hi CursorLine guibg=Grey20
+hi CursorColumn guibg=Grey20
 
 " Default Colors
 hi Normal guifg=#babdb6 guibg=#1e2426
