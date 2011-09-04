@@ -5,5 +5,12 @@ Use vimscript #1571 to take full advantage of the PHP syntax highlighting featur
 
 Screenshot: http://ld.yi.org/vim/rdark/
 
-Features:
-  - let rdark_current_line = 1 if you want to highlight the current line
+--
+
+This fork makes the Visual (selected) text highlighting much easier to see.
+
+It removes the rdark_current_line config variable in favor of simply
+configuring the CursorLine color directly. That way, you can activate the
+cursorline setting later and still have the appropriate color.
+
+It also sets the CursorColumn color the same as CursorLine.
